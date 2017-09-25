@@ -34,7 +34,7 @@
         function deleteUser() {
             UserService.Delete(vm.user._id)
                 .then(function () {
-                    // log user out
+                    // log the user out
                     $window.location = '/login';
                 })
                 .catch(function (error) {
